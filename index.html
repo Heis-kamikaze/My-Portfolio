@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="images/ami.ke.png" alt="amike logo">
-        </div>
+    <header id="header">
+     <div id="brand">
+     <img src="images/ami.ke.png" alt="amike logo">
+    </div>
         <div>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Servive</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <ul class="navitem"><a href="#home">Home</a></li>
+                <ul class="navitem"><a href="#about">About</a></ul>
+                <ul class="navitem"><a href="#service">Servive</a></ul>
+                <ul class="navitem"><a href="#skills">Skills</a></ul>
+                <ul class="navitem"><a href="#contact">Contact</a></ul>
             </nav>
         </div>
     </header>
@@ -26,27 +25,30 @@
     <main>
         <!-- home section -->
         <section id="home">
-            <div>
-                <div>
-                    <h1>
-                        I am Gerrard Bernard
-                    </h1>
-                    <h2>
-                        I'm Gerrard Bernard,<br> a software developer from Lagos <br>with only two weeks of experience in HTML <br> and only two days of CSS.
-                    </h2>
-                </div>
-                <div>
-                    <img src="./images/Sukuna_Wallpaper-removebg-preview (1).png" alt="dummy profile pic">
-                </div>
+            <div id="home-sect">
+                <div class="bio-profile">
+                    <div>
+                        <h1>
+                            I am Gerrard Bernard
+                        </h1>
+                        <h2>
+                            I'm Gerrard Bernard, a software developer from Lagos with only two weeks of experience in HTML and only two days of CSS.
+                        </h2>
+                    </div>
+                    <div id="profilepic">
+                        <img src="./images/Sukuna_Wallpaper-removebg-preview (1).png" alt="dummy profile pic">
+                    </div>
+                </div>    
                 <div>
                     <button><a href="#portfolio">My Portfolio</a></button>
                 </div>
             </div>
+            
         </section>
 
         <!-- about section -->
         <section id="about">
-           <div>
+           <div id="about-sect">
                 <h1>
                     Hi there
                 </h1>
