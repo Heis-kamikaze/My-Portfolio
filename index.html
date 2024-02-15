@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/d17025bfdd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
@@ -12,62 +13,136 @@
      <img src="images/ami.ke.png" alt="amike logo">
     </div>
         <div>
-            <nav>
-                <ul class="navitem"><a href="#home">Home</a></li>
-                <ul class="navitem"><a href="#about">About</a></ul>
-                <ul class="navitem"><a href="#service">Servive</a></ul>
-                <ul class="navitem"><a href="#skills">Skills</a></ul>
-                <ul class="navitem"><a href="#contact">Contact</a></ul>
+            <nav id="navitem">
+                <ul class="horizontal">
+                    <li class="navitem"><a href="#home">Home</a></li>
+                    <li class="navitem"><a href="#about">About</a></li>
+                    <li class="navitem"><a href="#service">Service</a></li>
+                    <li class="navitem"><a href="#skills">Skills</a></li>
+                    <li class="navitem"><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main>
+       
         <!-- home section -->
         <section id="home">
             <div id="home-sect">
-                <div class="bio-profile">
-                    <div>
+                    <div class=>
+                       <div id="iconCards">
+                            <i class="fa-brands fa-facebook socIcon"></i>
+                            <i class="fa-brands fa-instagram socIcon"></i>
+                            <i class="fa-brands fa-x-twitter socIcon"></i>
+                            <i class="fa-brands fa-discord socIcon"></i>
+                            <i class="fa-brands fa-twitter socIcon"></i>
+                       </div>
+                       <div id="intro">
+                        
                         <h1>
                             I am Gerrard Bernard
                         </h1>
                         <h2>
                             I'm Gerrard Bernard, a software developer from Lagos with only two weeks of experience in HTML and only two days of CSS.
                         </h2>
+                       </div>
+                        <div>
+                            <button id="port"><a href="#portfolio">My Portfolio</a></button>
+                            <button id="play"><a href="#home"><i class="fa-solid fa-play"></i></a></button>
+                        </div>
                     </div>
                     <div id="profilepic">
-                        <img src="./images/Sukuna_Wallpaper-removebg-preview (1).png" alt="dummy profile pic">
+                        <img src="./images/man-01.png" alt="amike man-01 pic" class="man">
                     </div>
                 </div>    
-                <div>
-                    <button><a href="#portfolio">My Portfolio</a></button>
-                </div>
-            </div>
-            
+                
         </section>
-
-        <!-- about section -->
-        <section id="about">
-           <div id="about-sect">
-                <h1>
-                    Hi there
-                </h1>
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, distinctio exercitationem dignissimos eligendi, architecto ut ducimus numquam, assumenda quos earum rem delectus alias error pariatur quo harum odit? Odit reprehenderit eos dolorem porro, neque illo optio quae enim numquam vitae consequatur ullam impedit nam.
-                </h2>
-           </div>
-        </section>
+        
+       
         <!-- service section -->
         <section id="service">
-            <h4>
-                SERVICES
-            </h4>
-            <h1>
-                My Services
-            </h1>
-            <h2>
-                I build games and APIs, video calling sites and image uploading sites. <br> I also create idea exchange platforms, for people of all ages and demographics.
-            </h2>
+            <div id="servicebody">
+                <h4 class="pinktxt">
+                    SERVICES
+                </h4>
+                <h1>
+                    My Services
+                </h1>
+                <h3>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tenetur molestiae unde vitae ipsam? Dignissimos eveniet recusandae totam dolore explicabo quos esse, aperiam tenetur iusto, architecto officia veniam reiciendis impedit.
+                </h3>
+            </div>
+            <div>
+                <div class="cardSet">
+                    <a href="">
+                        <div class="card">
+                        
+                            <i class="fa-brands fa-github cardicon pinktxt"></i>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis eos incidunt exercitationem? Vero, quos?</h3>
+                        
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                        
+                            <i class="fa-solid fa-cube cardicon pinktxt"></i>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis eos incidunt exercitationem? Vero, quos?</h3>
+                            
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                        
+                            <i class="fa-solid fa-video cardicon pinktxt"></i>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis eos incidunt exercitationem? Vero, quos?</h3>
+                            
+                        </div>
+                    </a>
+                </div>
+               <div class="cardSet">
+                    <a href="">
+                        <div class="card">
+                            
+                            <i class="fa-solid fa-image cardicon pinktxt"></i>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis eos incidunt exercitationem? Vero, quos?</h3>
+                            
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="card">
+                        
+                            <i class="fa-solid fa-apple-whole cardicon pinktxt"></i>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis eos incidunt exercitationem? Vero, quos?</h3>
+                        
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="card">
+        
+                            <i class="fa-brands fa-discord cardicon pinktxt"></i>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nobis eos incidunt exercitationem? Vero, quos?</h3>
+                        
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+             <!-- about section -->
+        <section id="about">
+            <div id="about-sect">
+                 <h1>
+                     Hi there
+                 </h1>
+                 <h2>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, distinctio exercitationem dignissimos eligendi, architecto ut ducimus numquam, assumenda quos earum rem delectus alias error pariatur quo harum odit? Odit reprehenderit eos dolorem porro, neque illo optio quae enim numquam vitae consequatur ullam impedit nam.
+                 </h2>
+            </div>
+         </section>
         </section>
     </main>
 </body>
